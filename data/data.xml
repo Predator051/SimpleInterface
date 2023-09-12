@@ -1,0 +1,102 @@
+<root>
+   <tabs>
+        <tab>
+            <name>Beginning C++ Programming</name>
+            <content>This is the start of your journey into the most powerful
+                language available to the programming public</content>
+        </tab>
+        <tab>
+            <name>About the Author</name>
+            <content>Richard Grimes has been programming in C++ for 25 years, working on projects as diverse
+                as scientific control and analysis and finance analysis to remote objects for the automotive
+                manufacturing industry. He has spoken at 70 international conferences on Microsoft
+                technologies (including C++ and C#) and has written 8 books, 150 articles for programming
+                journals, and 5 training courses for Microsoft. Richard was awarded Microsoft MVP for 10
+                years (1998-2007). He has a reputation for his deep understanding of the .NET framework
+                and C++ and the frank way in which he assesses new technology.</content>
+        </tab>
+        <tab>
+            <name>What this book covers</name>
+            <content>Chapter 1, Starting with C++, explains the files used to write C++ applications, file
+                dependencies, and the basics of C++ project management.
+                Chapter 2, Understanding Language Features, covers C++ statements and expressions,
+                constants, variables, operators, and how to control execution flow in applications.
+                Chapter 3, Exploring C++ Types, describes C++ built-in types, aggregated types, type aliases,
+                initializer lists, and conversion between types.
+                Chapter 4, Working with Memory, Arrays, and Pointers, covers how memory is allocated and
+                used in C++ applications, how to use built-in arrays, the role of C++ references, and how to
+                use C++ pointers to access memory.
+                Chapter 5, Using Functions, explains how to define functions, how to pass parameters-byreference and by-value using a variable number of parameters, creating and using pointers
+                to functions, and defining template functions and overloaded operators.
+                Chapter 6, Classes, describes how to define new types through classes and the various
+                special functions used in a class, how to instantiate a class as an object and how to destroy
+                them, and how to access objects through pointers and how to write template classes.
+                Chapter 7, Introduction to Object-Orientated Programming, explains inheritance and
+                composition, and how this affects using pointers and references to objects and the access
+                levels of class members and how they affect inherited members. This chapter also explains
+                polymorphism through virtual methods, and inheritance programming through abstract
+                classes.
+                Chapter 8, Using Standard Library Containers, covers all the C++ Standard Library container
+                classes and how to use them with iterators and the standard algorithms so that you can
+                manipulate the data in containers.
+                Chapter 9, Using Strings, describes the features of the standard C++ string class, converting
+                between numeric data and strings, internationalizing strings, and using regular expressions
+                to search and manipulate strings.
+                Chapter 10, Diagnostics and Debugging, explains how to prepare your code to provide
+                diagnostics and to enable it to be debugged, how</content>
+        </tab>
+        <tab>
+            <name>Compilers</name>
+            <content>C++ is a high-level language, designed to give you a wealth of language facilities and to be
+                readable for you and other developers. The computer's processor executes low-level code,
+                and it is the purpose of the compiler to translate C++ to the processor's machine code. A
+                single compiler may be able to target several types of processor, and if the code is standard
+                C++, it can be compiled with other compilers that support other processors.
+                However, the compiler does much more than this. As explained in Chapter 4, Working With
+                Memory, Arrays, and Pointers, C++ allows you to split your code into functions, which take
+                parameters and return a value, so the compiler sets up the memory used to pass this data.
+                In addition, functions can declare variables that will only be used within that function
+                (Chapter 5, Using Functions, will give more details), and will only exist while the function is
+                executed. The compiler sets up this memory, called a stack frame. You have compiler
+                options about how stack frames are created; for example, the Microsoft compiler options
+                /Gd, /Gr, and /Gz determine the order in which function arguments are pushed onto the
+                stack and whether the caller function or called function removes the arguments from the
+                stack at the end of the call. These options are important when you write code that will be
+                shared (but for the purpose of this book, the default stack construction should be used).
+                This is just one area, but it should impress upon you that compiler settings give you access
+                to a lot of power and flexibility.
+                The compiler compiles C++ code, and it will issue a compiler error if it comes across an
+                error in your code. This is syntax checking of your code. It is important to point out that the
+                code you write can be perfect C++ code from a syntax point of view, but it can still be
+                nonsense. The syntax checking of the compiler is an important check of your code, but you
+                should always use other checking. For example, the following code declares an integer
+                variable and assigns it a value:
+                 int i = 1 / 0;
+                The compiler will issue an error C2124 : divide or mod by zero. However, the
+                following code will perform the same action using an additional variable, which is logically
+                the same, but the compiler will issue no error:
+                 int j = 0;
+                 int i = 1 / j;
+                When the compiler issues an error it will stop compiling. This means two things. Firstly,
+                you get no compiled output, so the error will not find its way into an executable. Secondly,
+                it means that, if there are other errors in the source code, you will only find out about it
+                once you have fixed the current error and recompiled. If you want to perform a syntax
+                check and leave compilation to a later time, use the /Zs switch.
+                The compiler will also generate warning messages. A warning means that the code will
+                compile, but there is, potentially, a problem in the code that will affect how the executable
+                will run. The Microsoft compiler defines four levels of warnings: level 1 is the most severe
+                (and should be addressed) and level 4 is informational.
+                Warnings are often used to indicate that the language feature being compiled is available,
+                but it needs a specific compiler option that the developer has not used. During development
+                of code, you will often ignore warnings, since you may be testing language features.
+                However, when you get closer to producing production code you should pay more
+                attention to warnings. By default, the Microsoft compiler will display level 1 warnings, and
+                you can use the /W option with a number to indicate the levels that you wish to see (for
+                example, /W2 means you wish to see level 2 warnings as well as level 1 warnings). In
+                production code, you may use the /Wx option, which tells the compiler to treat warnings as
+                errors so that you must fix the issues to be able to compile the code. You can also use
+                the pragmas compiler (pragmas will be explained later) and compiler options to suppress
+                specific warnings.</content>
+        </tab>
+   </tabs>
+</root>
