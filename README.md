@@ -8,8 +8,8 @@ For building from source you should install next haxe tools:
 - actuate
 
 Building:<br />
-Debug/testing: openfl test [mac/windows/linux/html5] --debug<br />
-Binary: openfl build [mac/windows/linux/html5] 
-!!!Result of building placed in bin folder.
+Debug/testing: ```openfl test [mac/windows/linux/html5] --debug```<br />
+Binary: ```openfl build [mac/windows/linux/html5] ``` <br />
+> Result of building placed in bin folder.
 
 Patterns which was used in project: Strategy, MVP
